@@ -206,9 +206,9 @@ class YbloxApp(ctk.CTk):
         github_label = ctk.CTkLabel(github_frame, text="Source Code:", font=ctk.CTkFont(size=14, weight="bold"))
         github_label.pack(side="left", padx=(0, 10))
         
-        github_link = ctk.CTkLabel(github_frame, text="github.com/yourusername/Yblox", text_color="#00A2FF", cursor="hand2")
+        github_link = ctk.CTkLabel(github_frame, text="github.com/NelikKKL/Yblox", text_color="#00A2FF", cursor="hand2")
         github_link.pack(side="left")
-        github_link.bind("<Button-1>", lambda e: webbrowser.open("https://github.com/yourusername/Yblox"))
+        github_link.bind("<Button-1>", lambda e: webbrowser.open("https://github.com/NelikKKL/Yblox"))
         
         # License
         license_label = ctk.CTkLabel(about_frame, text="License: MIT License", font=ctk.CTkFont(size=14))
