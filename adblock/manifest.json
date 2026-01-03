@@ -1,0 +1,60 @@
+{
+  "manifest_version": 3,
+  "name": "Simple AdBlock",
+  "version": "1.6",
+  "description": "A simple ad blocker extension for Firefox.",
+  "author": "NelikNG",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Simple AdBlock"
+  },
+  "permissions": [
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
+    "contextMenus"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "adblock_content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "rules.json"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "adblock@example.org",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
+  }
+}

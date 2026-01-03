@@ -1,0 +1,7 @@
+customtkinter
+pyinstaller
+pillow
+requests
+beautifulsoup4
+pywebview
+pythonnet
