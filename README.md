@@ -46,5 +46,5 @@ python build_exe.py
 
 # 📄 Лицензия
 
-Этот проект распространяется под лицензией **MIT**. Подробности в файле [LICENSE](LICENSE).
+Этот проект распространяется под лицензией **MIT**. Подробности в файле [LICENSE](https://github.com/NelikKKL/Yblox/blob/main/LICENSE).
  
